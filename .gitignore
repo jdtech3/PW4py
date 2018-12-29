@@ -1,0 +1,8 @@
+# VS Code
+.vscode/*
+
+# Compiled stuff
+*.pyc
+
+# pycache
+.cogs/__pycache__/*
