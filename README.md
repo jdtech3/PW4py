@@ -1,7 +1,8 @@
 # PW4py: Politics & War API wrapper for Python
 ### Currently Implemented API Endpoints
 * **Unauthenticated APIs:**
-    - *none, work still in progress*
+    - Nation API
+    - *work still in progress*
 
 * **Authenticated APIs:**
     - *none, work still in progress*
