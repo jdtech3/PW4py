@@ -6,3 +6,4 @@
 
 # pycache
 .cogs/__pycache__/*
+.pytest_cache/*
