@@ -12,9 +12,31 @@
 - Object oriented *(take this with a grain of salt, it's my first OOP project xD)*
 - No need worry about Alex's inability to use correct typing 🙄
 - ~~Built-in cache for better performance in non-time-critical APIs~~ *in progress*
+- ~~Supports both `requests` and `aiohttp` backends~~ *in progress*
 
 ### Usage
-placeholder
+1. Load it:
+    ```py
+    import pw4py
+
+    # default options, no API key
+    pw4py.load()
+    # use the test server, API key provided
+    pw4py.load(test_server = True, key = "abcdef12345")
+    ```
+2. Init an object of the API you want to use:
+    ```py
+    from pw4py import Nation    # so you don't have to type pw4py.Nation() every time
+
+    nation = Nation(id)
+    ```
+3. Use it!
+    ```py
+    name = str(nation)
+    cityids = nation.cityids
+    color = nation.get("color")
+    # etc...
+    ```
 
 ### Issues or suggestions
 Feel free to make a new issue [here](https://gitlab.com/jdtech/pw4py/issues) if you find any bugs, encounter any problems, or have a feature suggestion.
