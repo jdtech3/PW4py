@@ -29,3 +29,4 @@ def load(**kwargs):
 
 # Imports
 from .nation import Nation
+from .alliance import Alliance
