@@ -2,7 +2,7 @@
 #
 # alliance.py - Implements the Alliance API
 #
-# Copyright (c) 2018 Joe Dai.
+# Copyright (c) 2018-2019 Joe Dai.
 
 class Alliance(object):
     def __init__(self, id):

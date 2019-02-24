@@ -2,7 +2,7 @@
 #
 # nation.py - Implements the Nation API
 #
-# Copyright (c) 2018 Joe Dai.
+# Copyright (c) 2018-2019 Joe Dai.
 
 # Libraries
 from datetime import datetime
@@ -206,7 +206,24 @@ class Nation(object):
         self.season = str(_raw_JSON['season'])
 
     def get(self, field):
+        """
+        Get an attribute
+
+        Arguments:
+            field {str} -- the attribute to get
+
+        Returns:
+            Union[int, str, float, bool, None] -- attribute contents
+        """
+
         return getattr(self, field)
 
     def __str__(self):
+        """
+        Get name of alliance
+
+        Returns:
+            str -- name of alliance
+        """
+
         return self.raw_JSON['name']
