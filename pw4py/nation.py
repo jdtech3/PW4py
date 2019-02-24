@@ -114,7 +114,7 @@ class Nation(object):
         self.tankcasualties = int(_raw_JSON['tankcasualties'])
         self.tankskilled = int(_raw_JSON['tankskilled'])
 
-        self.aircraft = int(_raw_JSON['soldiers'])
+        self.aircraft = int(_raw_JSON['aircraft'])
         self.aircraftcasualties = int(_raw_JSON['aircraftcasualties'])
         self.aircraftkilled = int(_raw_JSON['aircraftkilled'])
 
