@@ -1,5 +1,7 @@
 import requests
 
+__version__ = '0.1.0'
+
 session = None
 
 # User settable options
