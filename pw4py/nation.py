@@ -8,12 +8,15 @@
 from datetime import datetime
 
 class Nation(object):
+    """Nation API wrapper"""
+
     def __init__(self, id):
         # Local
         from . import session
         from . import API_PATH
+        from . import API_KEY
 
-        path = f'{API_PATH}/nation/id={id}'
+        path = f'{API_PATH}/nation/id={id}&key={API_KEY}'
         r = session.get(path)
 
         _raw_JSON = r.json()

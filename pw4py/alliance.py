@@ -5,12 +5,15 @@
 # Copyright (c) 2018-2019 Joe Dai.
 
 class Alliance(object):
+    """Alliance API wrapper"""
+
     def __init__(self, id):
         # Local
         from . import session
         from . import API_PATH
+        from . import API_KEY
 
-        path = f'{API_PATH}/alliance/id={id}'
+        path = f'{API_PATH}/alliance/id={id}&key={API_KEY}'
         r = session.get(path)
 
         _raw_JSON = r.json()
