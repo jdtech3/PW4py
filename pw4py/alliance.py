@@ -78,5 +78,15 @@ class Alliance(object):
     def get(self, field):
         return getattr(self, field)
 
+    def get_members(self):
+        from .nation import Nation
+
+        def create_gen():
+            for nid in self.member_id_list:
+                yield Nation(nid)
+
+        return list(create_gen())
+
+
     def __str__(self):
         return self.raw_JSON['name']
