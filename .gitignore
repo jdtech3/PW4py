@@ -7,3 +7,8 @@
 # pycache
 .cogs/__pycache__/*
 .pytest_cache/*
+
+# build / setuptools
+build/*
+dist/*
+PW4py.egg-info/*
