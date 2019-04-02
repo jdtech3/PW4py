@@ -15,6 +15,12 @@
 - ~~Built-in cache for better performance in non-time-critical APIs~~ *in progress*
 - ~~Supports both `requests` and `aiohttp` backends~~ *in progress*
 
+### Installation
+PW4py is now on [PyPI](https://pypi.org/project/PW4py/), so you can just install it by doing:
+```bash
+pip install pw4py
+```
+
 ### Usage
 1. Load it:
     ```py
