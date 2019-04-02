@@ -6,8 +6,7 @@ setup(
 
     # Dependencies
     install_requires = [
-        'requests',
-        'pytest'
+        'requests'
     ],
 
     # Metadata
