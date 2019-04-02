@@ -2,6 +2,7 @@
 ### Currently Implemented API Endpoints
 * **Unauthenticated APIs:**
     - Nation API
+    - Alliance API
     - *work still in progress*
 
 * **Authenticated APIs:**
@@ -19,9 +20,9 @@
     ```py
     import pw4py
 
-    # default options, no API key
-    pw4py.load()
-    # use the test server, API key provided
+    # default
+    pw4py.init(key = "abcdef12345")
+    # use the test server
     pw4py.load(test_server = True, key = "abcdef12345")
     ```
 2. Init an object of the API you want to use:
