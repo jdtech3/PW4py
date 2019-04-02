@@ -24,10 +24,9 @@ def load(**kwargs):
     # Create a requests session and set API key if applicable
     global session
     session = requests.Session()
-    if API_KEY is not None:
-        session.params = {
-            'key': API_KEY
-        }
+
+def init(**kwargs):
+    load(**kwargs)
 
 # Imports
 from .nation import Nation
