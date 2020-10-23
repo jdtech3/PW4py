@@ -1,6 +1,10 @@
 # PW4py: Politics & War API wrapper for Python
 
-*- This project is abandoned, though you are welcome to fork it and continue. -*
+---
+
+### - This project is abandoned, though you are welcome to fork it and continue. -
+
+---
 
 ### Currently Implemented API Endpoints
 * **Unauthenticated APIs:**
